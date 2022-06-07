@@ -234,7 +234,6 @@ int Gameover()
 	return er;
 }
 
-
 void gotoxy(int x, int y)
 {
 	COORD Pos;

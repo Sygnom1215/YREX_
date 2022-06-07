@@ -14,7 +14,7 @@ int main()
 		Mapping();
 	}
 
-	while (turn)
+	while (true)
 	{
 		if (_kbhit())
 		{
