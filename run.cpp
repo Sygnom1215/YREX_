@@ -17,12 +17,12 @@ int StartScreen()
 		if (select == 0)
 		{
 			cout << ("бсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбс\n");
-			cout << ("бс       бс                    бс     бс\n");
-			cout << ("бс       бс бс  бс бс        бс  бс   бс\n");
-			cout << ("бс       бс бс  бс бсбс  бсбсбсбс     бс\n");
-			cout << ("бс   бсбс     бс   бс  бс  бсбс       бс\n");
+			cout << ("бс                                    бс\n");
+			cout << ("бс                                    бс\n");
+			cout << ("бс                                    бс\n");
 			cout << ("бс                                    бс\n");
 			cout << ("бс          в║  Game Start            бс\n");
+			cout << ("бс                                    бс\n");
 			cout << ("бс                                    бс\n");
 			cout << ("бс                 Exit               бс\n");
 			cout << ("бсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбс\n");
@@ -31,12 +31,12 @@ int StartScreen()
 		else if (select == 1)
 		{
 			cout << ("бсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбс\n");
-			cout << ("бс       бс                    бс     бс\n");
-			cout << ("бс       бс бс  бс бс        бс  бс   бс\n");
-			cout << ("бс       бс бс  бс бсбс  бсбсбсбс     бс\n");
-			cout << ("бс   бсбс     бс   бс  бс  бсбс       бс\n");
+			cout << ("бс                                    бс\n");
+			cout << ("бс                                    бс\n");
+			cout << ("бс                                    бс\n");
 			cout << ("бс                                    бс\n");
 			cout << ("бс              Game Start            бс\n");
+			cout << ("бс                                    бс\n");
 			cout << ("бс                                    бс\n");
 			cout << ("бс          в║     Exit               бс\n");
 			cout << ("бсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбс\n");
@@ -61,7 +61,7 @@ int StartScreen()
 		else if (ch == 13 && select == 1)
 		{
 			r = 0;
-			break;
+			return 0;
 		}
 	}
 	return r;
@@ -204,10 +204,10 @@ int Gameover()
 		{
 			cout << ("бсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбсбс\n");
 			cout << ("бс                                    бс\n");
+			cout << ("бс									   бс\n");
 			cout << ("бс             Main Screen            бс\n");
-			cout << ("бс                                    бс\n");
-			cout << ("бс         в║     Exit                бс\n");
-			cout << ("бс                                    бс\n");
+			cout << ("бс									   бс\n");
+			cout << ("бс          в║     Exit               бс\n");
 			cout << ("бс                                    бс\n");
 			cout << ("бс                                    бс\n");
 			cout << ("бс                                    бс\n");
@@ -234,7 +234,7 @@ int Gameover()
 		else if (ech == 13 && select == 1)
 		{
 			er = 0;
-			break;
+			return 0;
 		}
 	}
 	return er;
@@ -242,8 +242,9 @@ int Gameover()
 
 void gotoxy(int x, int y)
 {
-	COORD Pos;
-	Pos.X = x;
-	Pos.Y = y;
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Pos);
+	COORD pos;
+	pos.X = x;
+	pos.Y = y;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
 }
+

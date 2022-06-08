@@ -4,11 +4,12 @@
 #define size_y 10
 #define size_x 20
 
-enum { BLK, WAL, HUM, OBS };
-
-
-
-
+enum {
+	BLK,
+	WAL,
+	HUM,
+	OBS
+};
 
 
 int StartScreen();
