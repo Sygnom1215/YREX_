@@ -1,5 +1,11 @@
 #include "run.h"
 
+struct Coordinate
+{
+	int x, y;
+}person;
+int map[size_y][size_x];
+
 int StartScreen()
 {
 	int select = 0, ch = 0;
