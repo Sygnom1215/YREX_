@@ -141,7 +141,7 @@ void Obstacle()
 	{
 		map[size_y - 2][size_x - 2] = OBS;
 		map[size_y - 2][size_x - 3] = OBS;
-		map[size_y - 3][size_x - 2] = OBS;
+		//map[size_y - 3][size_x - 2] = OBS;
 		map[size_y - 3][size_x - 3] = OBS;
 	}
 	else if (rad == 2)
