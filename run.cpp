@@ -3,12 +3,12 @@
 struct Coordinate
 {
 	int x, y;
-}person;
+}person; // 좌표계
 int map[size_y][size_x];
 
 int StartScreen()
 {
-	int select = 0, ch = 0;
+	int select = 0, ch = 0; // 선택, 입력
 	int r;
 
 	while (true)
@@ -141,7 +141,7 @@ void Obstacle()
 	{
 		map[size_y - 2][size_x - 2] = OBS;
 		map[size_y - 2][size_x - 3] = OBS;
-		//map[size_y - 3][size_x - 2] = OBS;
+		map[size_y - 3][size_x - 2] = OBS;
 		map[size_y - 3][size_x - 3] = OBS;
 	}
 	else if (rad == 2)
@@ -178,7 +178,7 @@ void MapMove()
 
 int Gameover()
 {
-	int select = 0, ech = 0;
+	int select = 0, ech = 0; // 선택, 입력
 	int er = 1, eturn = 0;
 
 	if (map[person.y][person.x] != HUM) eturn = 1;

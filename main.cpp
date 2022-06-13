@@ -14,7 +14,7 @@ int main()
 		Mapbase();
 		Mapping();
 	}
-
+	else return 0;
 	while (true)
 	{
 		if (_kbhit())
@@ -28,6 +28,8 @@ int main()
 		gotoxy(0, 0);
 		Mapping();
 		turn = Gameover();
+		if (turn == 0)
+			break;
 		t++;
 	}
 
