@@ -4,6 +4,7 @@ struct Coordinate
 {
 	int x, y;
 }person; // 좌표계
+
 int map[size_y][size_x];
 
 int StartScreen()
@@ -19,12 +20,12 @@ int StartScreen()
 			cout << ("■■■■■■■■■■■■■■■■■■■■\n");
 			cout << ("■                                    ■\n");
 			cout << ("■                                    ■\n");
+			cout << ("■         ▶  Game Start             ■\n");
+			cout << ("■                                    ■\n");
+			cout << ("■                Exit                ■\n");
 			cout << ("■                                    ■\n");
 			cout << ("■                                    ■\n");
-			cout << ("■          ▶  Game Start            ■\n");
 			cout << ("■                                    ■\n");
-			cout << ("■                                    ■\n");
-			cout << ("■                 Exit               ■\n");
 			cout << ("■■■■■■■■■■■■■■■■■■■■\n");
 			cout << ("\n w : 메뉴 커서 위로 이동      j : 플레이어 점프\n\n s : 메뉴 커서 아래로 이동    Enter : 메뉴 선택\n");
 		}
@@ -33,12 +34,12 @@ int StartScreen()
 			cout << ("■■■■■■■■■■■■■■■■■■■■\n");
 			cout << ("■                                    ■\n");
 			cout << ("■                                    ■\n");
-			cout << ("■                                    ■\n");
-			cout << ("■                                    ■\n");
-			cout << ("■              Game Start            ■\n");
-			cout << ("■                                    ■\n");
+			cout << ("■             Game Start             ■\n");
 			cout << ("■                                    ■\n");
 			cout << ("■          ▶     Exit               ■\n");
+			cout << ("■                                    ■\n");
+			cout << ("■                                    ■\n");
+			cout << ("■                                    ■\n");
 			cout << ("■■■■■■■■■■■■■■■■■■■■\n");
 			cout << ("\n w : 메뉴 커서 위로 이동      j : 플레이어 점프\n\n s : 메뉴 커서 아래로 이동    Enter : 메뉴 선택\n");
 		}
@@ -130,7 +131,7 @@ void Obstacle()
 {
 	int rad;
 
-	rad = rand() % 3;
+	rad = rand() % 4;
 
 	if (rad == 0)
 	{
