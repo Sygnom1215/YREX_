@@ -35,7 +35,7 @@ int main()
 		turn = Gameover();
 		finish = clock();
 		score = (float)(finish - start);
-		cout << score << "Á¡" << endl;
+		cout << (score / CLOCKS_PER_SEC) << "Á¡" << endl;
 		if (turn == 0)
 			break;
 		t++;
