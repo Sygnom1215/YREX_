@@ -5,6 +5,4 @@
 구글 Dino T-Rex 게임을 참고하여 만드는 중입니다.
 
 Development in Progress
-Start in 26 May2022
-
-~ 24 June
+26 May ~ 24 June
